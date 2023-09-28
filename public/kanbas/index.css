@@ -1,0 +1,29 @@
+.kanbas-nav-sidebar {
+    width: 85px;
+}
+
+.list-group-item {
+    border: none;
+    background-color: black;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-container a {
+    color: white;
+    text-decoration: none;
+}
