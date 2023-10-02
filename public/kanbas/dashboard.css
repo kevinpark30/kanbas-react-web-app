@@ -7,6 +7,14 @@
     background-color: black;
 }
 
+.kanbas-nav-item.active {
+    background-color: white;
+}
+
+.kanbas-nav-item.active a {
+    color: red;
+}
+
 .list-group-item:first-child {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -28,4 +36,36 @@
 .option-container a {
     color: white;
     text-decoration: none;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-container p {
+    font-size: 32px;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.subtitle p {
+    font-size: 24px;
+}
+
+.card-container {
+    width: 260px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card-body p {
+    color: grey
 }
