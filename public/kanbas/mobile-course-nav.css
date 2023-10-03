@@ -1,0 +1,19 @@
+.module-container {
+    background-color: black;
+    height: 60px;
+    color: white;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item a {
+    color: red;
+    text-decoration: none;
+}

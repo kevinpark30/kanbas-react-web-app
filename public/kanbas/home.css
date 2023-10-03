@@ -121,3 +121,54 @@ li a {
 .published-btn {
     background-color: green;
 }
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 60%;
+}
+
+.coming-up-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.coming-up-container a {
+    color: red;
+}
+
+.lecture-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.lecture-container a {
+    color: red;
+}
+
+.lecture-container p {
+    color: grey;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.course-status-column {
+    width: 500px;
+}
+
+.module-container {
+    background-color: black;
+    height: 60px;
+    color: white;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
