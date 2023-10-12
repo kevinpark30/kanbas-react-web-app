@@ -1,161 +1,415 @@
-<table width="100%">
-    <tbody>
-        <tr>
-            <td valign="top" width="10%">
-                <ul>
-                    <li>
-                        <a href="/kanbas/account.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/courses.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top" width="10%">
-                <ul>
-                    <li>
-                        <a href="/kanbas/home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Modules</a>
-                    </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/assignments/">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/grades.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto Video</a>
-                    </li>
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <select id="gradebook">
-                    <option>Gradebook</option>
-                </select>
-                <button>Import</button>
-                <select id="export">
-                    <option>Export</option>
-                </select>
-                <button>Configure</button>
-
-                <h2>Student Names</h2>
-
-                <input placeholder="Search Students"/>
-
-                <h2>Assignment Names</h2>
-
-                <input placeholder="Search Assignments"/>
-
-                <br/>
-                <br/>
-                <button>Apply Filters</button>
-
-                <br/>
-                <br/>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Student Name</th>
-                            <th>A1 SETUP Out of 100</th>
-                            <th>A2 HTML Out of 100</th>
-                            <th>A3 CSS Out of 100</th>
-                            <th>A4 BOOTSTRAP Out of 100</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Alice Wonderland</td>
-                            <td align="center">98</td>
-                            <td align="center">89</td>
-                            <td align="center">87</td>
-                            <td align="center">90</td>
-                        </tr>
-                        <tr>
-                            <td>Princes Leia</td>
-                            <td align="center">98</td>
-                            <td align="center">80</td>
-                            <td align="center">87</td>
-                            <td align="center">86</td>
-                        </tr>
-                        <tr>
-                            <td>Luke Skywalker</td>
-                            <td align="center"><input value="99"/></td>
-                            <td align="center">88</td>
-                            <td align="center">97</td>
-                            <td align="center">92</td>
-                        </tr>
-                        <tr>
-                            <td>Hans Solo</td>
-                            <td align="center">83</td>
-                            <td align="center">99</td>
-                            <td align="center"><input value="94"/></td>
-                            <td align="center">98</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<html>
+    <head>
+        <link
+            href="../../vendors/bootstrap/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link href="grades.css" rel="stylesheet" />
+        <link
+            href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-auto">
+                <div class="kanbas-nav-sidebar">
+                    <ul class="list-group">
+                        <li class="list-group-item kanbas-nav-item">
+                            <div class="option-container">
+                                <a href="/kanbas/profile/"
+                                    ><i
+                                        class="fa-regular fa-circle-user fa-2x"
+                                        style="color: white"
+                                    ></i
+                                    >Account</a
+                                >
+                            </div>
+                        </li>
+                        <li class="list-group-item kanbas-nav-item">
+                            <div class="option-container">
+                                <a href="/kanbas/dashboard.html"
+                                    ><i
+                                        class="fa-solid fa-gauge-high fa-2x"
+                                        style="color: red"
+                                    ></i
+                                    >Dashboard</a
+                                >
+                            </div>
+                        </li>
+                        <li class="list-group-item kanbas-nav-item active">
+                            <div class="option-container">
+                                <a href="/kanbas/home.html"
+                                    ><i
+                                        class="fa-solid fa-book fa-2x"
+                                        style="color: red"
+                                    ></i
+                                    >Courses</a
+                                >
+                            </div>
+                        </li>
+                        <li class="list-group-item kanbas-nav-item">
+                            <div class="option-container">
+                                <a href="#"
+                                    ><i
+                                        class="fa-solid fa-calendar-days fa-2x"
+                                        style="color: red"
+                                    ></i
+                                    >Calendar</a
+                                >
+                            </div>
+                        </li>
+                        <li class="list-group-item kanbas-nav-item">
+                            <div class="option-container">
+                                <a href="#"
+                                    ><i
+                                        class="fa-solid fa-envelope-open-text fa-2x"
+                                        style="color: red"
+                                    ></i
+                                    >Inbox</a
+                                >
+                            </div>
+                        </li>
+                        <li class="list-group-item kanbas-nav-item">
+                            <div class="option-container">
+                                <a href="#"
+                                    ><i
+                                        class="fa-regular fa-clock fa-2x"
+                                        style="color: red"
+                                    ></i
+                                    >History</a
+                                >
+                            </div>
+                        </li>
+                        <li class="list-group-item kanbas-nav-item">
+                            <div class="option-container">
+                                <a href="#"
+                                    ><i
+                                        class="fa-solid fa-network-wired fa-2x"
+                                        style="color: red"
+                                    ></i
+                                    >Studio</a
+                                >
+                            </div>
+                        </li>
+                        <li class="list-group-item kanbas-nav-item">
+                            <div class="option-container">
+                                <a href="#"
+                                    ><i
+                                        class="fa-solid fa-arrow-right-from-bracket fa-2x"
+                                        style="color: red"
+                                    ></i
+                                    >Commons</a
+                                >
+                            </div>
+                        </li>
+                        <li class="list-group-item kanbas-nav-item">
+                            <div class="option-container">
+                                <a href="#"
+                                    ><i
+                                        class="fa-regular fa-circle-question fa-2x"
+                                        style="color: red"
+                                    ></i
+                                    >Help</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-container col">
+                <div class="row">
+                    <div class="heading-container mt-3">
+                        <i
+                            class="fa-solid fa-bars fa-2x"
+                            style="color: red"
+                        ></i>
+                        <nav
+                            style="--bs-breadcrumb-divider: '>'"
+                            aria-label="breadcrumb"
+                        >
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">CS4550.12631.202410</a>
+                                </li>
+                                <li
+                                    class="breadcrumb-item active"
+                                    aria-current="page"
+                                >
+                                    Grades
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <hr />
+                </div>
+                <div class="row">
+                    <div class="col-md-auto">
+                        <div class="body-container">
+                            <div class="courses-nav-sidebar">
+                                <ul class="list-group">
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="/kanbas/home.html">Home</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Modules</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Piazza</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Zoom Meetings</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="/kanbas/assignments/"
+                                            >Assignments</a
+                                        >
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Quizzes</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item active"
+                                    >
+                                        <a href="/kanbas/grades.html">Grades</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">People</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Panopto Video</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Discussions</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Announcements</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Pages</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Files</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Rubrics</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Outcomes</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Collaborations</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Syllabus</a>
+                                    </li>
+                                    <li
+                                        class="list-group-item courses-nav-item"
+                                    >
+                                        <a href="#">Settings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row mb-3">
+                            <div class="col-8"></div>
+                            <div class="col me-5">
+                                <div class="btn me-2">
+                                    <i class="fa-solid fa-file-import"></i>
+                                    Import
+                                </div>
+                                <div class="btn me-2">
+                                    <i class="fa-solid fa-file-export"></i>
+                                    Export
+                                </div>
+                                <div class="btn">
+                                    <i class="fa-solid fa-gear"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="student-names">Student Names</label>
+                                <select
+                                    class="form-control mt-2"
+                                    id="student-names"
+                                >
+                                    <option class="form-control">
+                                        Search Students
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-5">
+                                <label for="student-names"
+                                    >Assignment Names</label
+                                >
+                                <select
+                                    class="form-control mt-2"
+                                    id="assignment-names"
+                                >
+                                    <option class="form-control">
+                                        Search Assignments
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3">
+                                <div class="btn">
+                                    <i class="fa-solid fa-filter"></i>Apply
+                                    Filters
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-10 table-responsive">
+                                <table
+                                    class="table table-striped table-bordered"
+                                >
+                                    <thead></thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Student Names</th>
+                                            <td class="text-center">
+                                                <div class="assignment-header">
+                                                    <div
+                                                        class="assignment-name"
+                                                    >
+                                                        A1 Setup
+                                                    </div>
+                                                    <div
+                                                        class="assignment-points"
+                                                    >
+                                                        Out of 100
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="assignment-header">
+                                                    <div
+                                                        class="assignment-name"
+                                                    >
+                                                        A2 HTML
+                                                    </div>
+                                                    <div
+                                                        class="assignment-points"
+                                                    >
+                                                        Out of 100
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="assignment-header">
+                                                    <div
+                                                        class="assignment-name"
+                                                    >
+                                                        A3 CSS
+                                                    </div>
+                                                    <div
+                                                        class="assignment-points"
+                                                    >
+                                                        Out of 100
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="assignment-header">
+                                                    <div
+                                                        class="assignment-name"
+                                                    >
+                                                        A4 BOOTSTRAP
+                                                    </div>
+                                                    <div
+                                                        class="assignment-points"
+                                                    >
+                                                        Out of 100
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: red">
+                                                Alice Wonderland
+                                            </td>
+                                            <td class="text-center">98%</td>
+                                            <td class="text-center">89%</td>
+                                            <td class="text-center">87%</td>
+                                            <td class="text-center">90%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: red">
+                                                Princes Leia
+                                            </td>
+                                            <td class="text-center">98%</td>
+                                            <td class="text-center">80%</td>
+                                            <td class="text-center">87%</td>
+                                            <td class="text-center">86%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: red">
+                                                Luke Skywalker
+                                            </td>
+                                            <td class="text-center">99%</td>
+                                            <td class="text-center">88%</td>
+                                            <td class="text-center">97%</td>
+                                            <td class="text-center">92%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: red">
+                                                Hans Solo
+                                            </td>
+                                            <td class="text-center">83%</td>
+                                            <td class="text-center">
+                                                <input
+                                                    type="text"
+                                                    value="99%"
+                                                />
+                                            </td>
+                                            <td class="text-center">94%</td>
+                                            <td class="text-center">98%</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot></tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

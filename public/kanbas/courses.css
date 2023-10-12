@@ -7,6 +7,23 @@
     background-color: black;
 }
 
+.kanbas-nav-item.active {
+    background-color: white;
+}
+
+.kanbas-nav-item.active a {
+    color: red;
+}
+
+.courses-nav-item {
+    border: none;
+}
+
+.courses-nav-item a {
+    color: red;
+    text-decoration: none;
+}
+
 .list-group-item:first-child {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -28,4 +45,26 @@
 .option-container a {
     color: white;
     text-decoration: none;
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.heading-container p {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.breadcrumb {
+    font-size: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: red;
 }
