@@ -1,0 +1,36 @@
+.courses-nav-sidebar {
+    width: 100px;
+}
+
+.courses-nav-item {
+    border: none;
+}
+
+.courses-nav-item  {
+    color: red;
+    text-decoration: none;
+}
+
+.courses-nav-item.active {
+    border-left: 2px solid black;
+    background-color: white;
+}
+
+.courses-nav-item.active a {
+    color: black;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.category-container a {
+    color: red;
+    text-decoration: none;
+}
