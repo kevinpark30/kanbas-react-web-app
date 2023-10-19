@@ -1,0 +1,23 @@
+[
+    { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101" },
+    { "_id": "A102", "title": "Combustion Analysis", "course": "RS101" },
+    { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101" },
+    { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102" },
+    { "_id": "A202", "title": "Flow Analysis", "course": "RS102" },
+    { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
+    { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
+    { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
+    { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" },
+    { "_id": "A401", "title": "Syllabus Reading", "course": "CS101" },
+    { "_id": "A402", "title": "Academic Integrity Agreement", "course": "CS101" },
+    { "_id": "A403", "title": "Introduction Survey", "course": "CS101" },
+    { "_id": "A501", "title": "Syllabus Reading", "course": "CS102" },
+    { "_id": "A502", "title": "Academic Integrity Agreement", "course": "CS102" },
+    { "_id": "A503", "title": "Introduction Survey", "course": "CS102" },
+    { "_id": "A601", "title": "Syllabus Reading", "course": "CS103" },
+    { "_id": "A602", "title": "Academic Integrity Agreement", "course": "CS103" },
+    { "_id": "A603", "title": "Introduction Survey", "course": "CS103" },
+    { "_id": "A701", "title": "Syllabus Reading", "course": "MATH101" },
+    { "_id": "A702", "title": "Academic Integrity Agreement", "course": "MATH101" },
+    { "_id": "A703", "title": "Introduction Survey", "course": "MATH101" }
+  ]

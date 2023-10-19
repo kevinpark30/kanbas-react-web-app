@@ -1,0 +1,128 @@
+[
+    {
+      "_id": "M101",
+      "name": "Introduction to Rocket Propulsion",
+      "description": "Basic principles of rocket propulsion and rocket engines.",
+      "course": "RS101"
+    },
+    {
+      "_id": "M102",
+      "name": "Fuel and Combustion",
+      "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+      "course": "RS101"
+    },
+    {
+      "_id": "M103",
+      "name": "Nozzle Design",
+      "description": "Principles of rocket nozzle design and performance optimization.",
+      "course": "RS101"
+    },
+    {
+      "_id": "M201",
+      "name": "Fundamentals of Aerodynamics",
+      "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M202",
+      "name": "Subsonic and Supersonic Flow",
+      "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M203",
+      "name": "Aerodynamic Heating",
+      "description": "Study of aerodynamic heating and thermal protection systems.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M301",
+      "name": "Spacecraft Structural Design",
+      "description": "Fundamentals of designing spacecraft structures and materials selection.",
+      "course": "RS103"
+    },
+    {
+      "_id": "M302",
+      "name": "Orbital Mechanics",
+      "description": "Understanding orbital dynamics and mission planning.",
+      "course": "RS103"
+    },
+    {
+      "_id": "M303",
+      "name": "Spacecraft Systems Engineering",
+      "description": "Overview of spacecraft systems and subsystems engineering.",
+      "course": "RS103"
+    },
+    {
+        "_id": "M401",
+        "name": "Introduction",
+        "description": "Introduction to Web Development",
+        "course": "CS101"
+    },
+    {
+        "_id": "M402",
+        "name": "Textbook",
+        "description": "Textbook material containing class knowledge that is needed",
+        "course": "CS101"
+    },
+    {
+        "_id": "M403",
+        "name": "YouTube Videos",
+        "description": "Link to YouTube Videos",
+        "course": "CS101"
+    },
+    {
+        "_id": "M501",
+        "name": "Introduction",
+        "description": "Introduction to Database Design",
+        "course": "CS102"
+    },
+    {
+        "_id": "M502",
+        "name": "Textbook",
+        "description": "Textbook material containing class knowledge that is needed",
+        "course": "CS102"
+    },
+    {
+        "_id": "M503",
+        "name": "YouTube Videos",
+        "description": "Link to YouTube Videos",
+        "course": "CS102"
+    },
+    {
+        "_id": "M601",
+        "name": "Introduction",
+        "description": "Introduction to Algorithms and Data",
+        "course": "CS103"
+    },
+    {
+        "_id": "M602",
+        "name": "Textbook",
+        "description": "Textbook material containing class knowledge that is needed",
+        "course": "CS103"
+    },
+    {
+        "_id": "M603",
+        "name": "YouTube Videos",
+        "description": "Link to YouTube Videos",
+        "course": "CS103"
+    },
+    {
+        "_id": "M701",
+        "name": "Introduction",
+        "description": "Introduction to Graph Theory",
+        "course": "MATH101"
+    },
+    {
+        "_id": "M702",
+        "name": "Textbook",
+        "description": "Textbook material containing class knowledge that is needed",
+        "course": "MATH101"
+    },
+    {
+        "_id": "M703",
+        "name": "YouTube Videos",
+        "description": "Link to YouTube Videos",
+        "course": "MATH101"
+    }
+  ]

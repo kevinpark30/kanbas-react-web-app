@@ -1,0 +1,18 @@
+.btn {
+    width: 160px;
+    background-color: #e2e3e5;
+}
+
+.top-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.red {
+    background-color: red;
+}
+
+.btn-small {
+    width: 60px;
+}
