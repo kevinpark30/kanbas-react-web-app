@@ -6,3 +6,15 @@ h5 span {
     margin-top: 20px;
     background-color: #e2e3e5;
 }
+
+.module-list .list-group-item .green {
+    background-color: green;
+}
+
+.module-list .list-group-item .red {
+    background-color: red;
+}
+
+.module-list .grey {
+    background-color: #708090;
+}
