@@ -9,7 +9,7 @@ function WorkingWithObjects() {
         completed: false,
         score: 0,
     });
-    const URL = `${process.env.REACT_LAB5_API}/assignment`;
+    const URL = `${process.env.REACT_APP_LAB5_API}/assignment`;
     const fetchAssignment = async () => {
         const response = await axios.get(`${URL}`);
         setAssignment(response.data);

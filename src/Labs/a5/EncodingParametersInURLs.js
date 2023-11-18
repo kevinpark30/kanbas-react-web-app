@@ -4,7 +4,7 @@ function EncodingParametersInURLs() {
     const [a, setA] = useState(34);
     const [b, setB] = useState(23);
     const [result, setResult] = useState(0);
-    const URL = process.env.REACT_LAB5_API;
+    const URL = process.env.REACT_APP_LAB5_API;
     const fetchSum = async (a, b) => {
         const response = await axios.get(`${URL}/add/${a}/${b}`);
         setResult(response.data);

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 function WorkingWithArrays() {
-    const URL = process.env.REACT_LAB5_API;
+    const URL = process.env.REACT_APP_LAB5_API;
     const API = `${URL}/todos`;
     const [todo, setTodo] = useState({
         id: 1,
