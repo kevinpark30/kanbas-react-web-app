@@ -14,10 +14,7 @@ const modulesSlice = createSlice({
         },
 
         addModule: (state, action) => {
-            state.modules = [
-                { ...action.payload, _id: new Date().getTime().toString() },
-                ...state.modules,
-            ];
+            state.modules = [action.payload, ...state.modules];
         },
         deleteModule: (state, action) => {
             state.modules = state.modules.filter(
