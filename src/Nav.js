@@ -51,6 +51,14 @@ function Nav() {
             >
                 Signin
             </Link>
+            <Link
+                to="/Kanbas/signup"
+                className={`nav-link ${
+                    pathname.includes("signup") ? "active" : ""
+                }`}
+            >
+                Signup
+            </Link>
         </nav>
     );
 }
